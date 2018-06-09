@@ -1,11 +1,10 @@
-define([
-    '../js/HolidayPlanner'
-], function (Calculator) {
+function add(a, b)
+{
+    return a + b;
+}
 
-    const testDiv = document.getElementsByClassName("test")[0];
-    function assert(value, description) {
-        const result = value ? "pass" : "fail";
-        const p = document.createElement("li");
-        p.innerText = `${result} - ${description}`;
-        testDiv.appendChild(p);
-    }
+QUnit.test("sample_Test", function(assert) {
+    var val = add(4, 5);
+
+    assert.equal(val, 9);
+});

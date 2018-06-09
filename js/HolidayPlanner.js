@@ -10,12 +10,12 @@ function Calculator(arr){
             arr.push(el[1]);
         }
         if (arr.indexOf(el[0]) === -1){
-            arr.push(el[0])
+            arr.push(el[0]);
         }
     }})
-    let sol1 = arr.filter(el => !Array.isArray(el))
-    let sol2 = sol1.join("")
-    console.log(sol2)
+    let sol1 = arr.filter(el => !Array.isArray(el));
+    let sol2 = sol1.join("");
+    console.log(sol2);
 
 }
-Calculator(arr3)
+Calculator(arr3);
