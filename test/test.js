@@ -1,10 +1,13 @@
-function add(a, b)
-{
-    return a + b;
-}
+arr1 = ['u',['v','w'],['w','z'],['x','u'],['y','z'],'z'];
+arr2 = ['x'];
+arr3 = ['y',['x','z'],'z'];
 
-QUnit.test("sample_Test", function(assert) {
-    var val = add(4, 5);
+QUnit.test("handles dependency", function(assert) {
+    var val = HolidayPlanner([
+        'x',
+        ['y', 'z'],
+        'z'
+    ]);
 
-    assert.equal(val, 9);
+    assert.equal(val, 'xzy');
 });
